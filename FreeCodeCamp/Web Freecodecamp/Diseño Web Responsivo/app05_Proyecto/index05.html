@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles05.css" />
+    <title>Proyecto Juan Sifuentes</title>
+  </head>
+  <body>
+    <h1 id="title">Mi Formulario</h1>
+    <p id="description">Aquí podras registrarte</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Nombres: <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required/></label>
+      <label id="email-label" for="email">Email: <input type="email" name="email" id="email" placeholder="Ingresa tu email" required/></label>
+      <label id="number-label" name="age" for="age">Age: <input name="age" id="number" placeholder="Tu edad: " type="number" min="13" max="120"/></label>
+      <label name="cursos" for="cursos">Selecciona un curso
+        <select name="cursos" id="dropdown">
+          <option value="">Seleccionar</option>
+          <option value="1">Java</option>
+          <option value="2">Python</option>
+          <option value="3">Angular</option>
+          <option value="4">C#</option>
+        </select>
+      </label>
+      <label name="personal-account" for="personal-account"><input class="inline" id="personal-account" value="1" type="radio" name="account-type" checked/>Personal</label>
+      <label name="business-account" for="business-account"><input class="inline" id="business-account" value="2" type="radio" name="account-type"/>Business</label>
+      <label name="terms" for="" >Selecciona otros cursos: </label>
+        <label name="terms_1" for="terms_1">
+        <input class="inline" name="terms_1" id="terms_1" value="1" type="checkbox" required/> Python
+        <label name="terms_2" for="terms_2">
+        <input class="inline" name="terms_2" id="terms_2" value="2" type="checkbox" required/> Java
+        <label name="terms_3" for="terms_3">
+        <input class="inline" name="terms" id="terms_3" value="3" type="checkbox" required/> C#
+
+          <label name="bio" for="bio">Provide a bio:
+          <textarea name="bio" id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
